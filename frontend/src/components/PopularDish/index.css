@@ -1,0 +1,13 @@
+.popular-dish-img{
+    width: 300px;
+    height: 330px;
+    border-radius: 15px;
+}
+.popular-dish{
+    list-style: none;
+    text-align: start;
+    margin-bottom: 20px;
+}
+.dish-name{
+    font-size: 18px;
+}
