@@ -1,0 +1,22 @@
+.home-intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.intro-image{
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+}
+.intro-head{
+    color: #f5f5f5;
+    font-size: 75px;
+}
+.intro-head-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}

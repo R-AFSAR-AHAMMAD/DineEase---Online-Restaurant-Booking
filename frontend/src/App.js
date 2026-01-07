@@ -1,9 +1,21 @@
 import "./App.css"
-import Navbar from './components/Navbar'
+
+import Home from './components/Home'
+import AboutUs from './components/AboutUs'
+import Services from './components/Services'
+import Team from './components/Team'
+import Reservation from './components/Reservation'
+import Footer from './components/Footer'
+
 const App = () => {
   return (
     <main className='main-container'>
-      <Navbar />
+      <Home />
+      <AboutUs />
+      <Services />
+      <Team />
+      <Reservation />
+      <Footer />
     </main>
   )
 }
