@@ -1,11 +1,12 @@
 import React from 'react'
+import './index.css'
 
-const Reservation = () => {
-  return (
-    <div>
-      <h1>Reservation</h1>
-    </div>
-  )
-}
+import ReservationForm from "../ReservationForm"
+const Reservation = () => (
+  <section className='reservation-container'>
+    <img className='reservation-img' alt="reservation-img" src="https://dineeasebyafsar.netlify.app/reservation.png" />
+  <ReservationForm />
+  </section>
+)
 
 export default Reservation

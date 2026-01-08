@@ -1,0 +1,48 @@
+.reservation-section {
+  width: 400px;
+  margin: 20px auto;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fafafa;
+  text-align: center; /* move common text-align here */
+}
+
+.reservation-section h2 {
+  margin-bottom: 12px;
+}
+
+.reservation-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.reservation-form input,
+.reservation-form button {
+  width: 90%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.reservation-form input {
+  border: 1px solid #ccc;
+}
+
+.reservation-form button {
+  background: #ff5a5f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.reservation-form button:hover {
+  background: #e14f50;
+}
+
+.message {
+  color: green;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,12 @@
+.reservation-img{
+    width: 300px;
+}
+.reservation-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.reservation-img{
+    width: 600px;
+}
