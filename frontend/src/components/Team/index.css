@@ -1,0 +1,14 @@
+.team{
+    text-align: center;
+}
+.team-main-head{
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+.team-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}

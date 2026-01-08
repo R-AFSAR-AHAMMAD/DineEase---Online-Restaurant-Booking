@@ -66,6 +66,30 @@ const PopularDishes = () => (
         <PopularDish dishData={dish} key={dish.id} />
       ))}
     </ul>
+    <section className="popular-dishes-footer-container">
+      <article>
+        <div className="mini-info">
+          <span className="exp">14</span>
+          <p>Restaurants</p>
+        </div>
+        <div className="mini-info">
+            <span className="exp">20</span>
+          <p>Chef In Kitchen</p>
+        </div>
+      </article>
+      <img className="popular-dish-footer-img" alt="popular-dish-footer-img" src="https://dineeasebyafsar.netlify.app/whoweare.png" />
+      <article>
+        <div className="mini-info">
+          <span className="exp">08</span>
+          <p>Years Of Experience</p>
+        </div>
+        
+        <div className="mini-info">
+            <span className="exp">200</span>
+          <p>Food Dishes</p>
+        </div>
+      </article>
+    </section>
   </section>
 );
 

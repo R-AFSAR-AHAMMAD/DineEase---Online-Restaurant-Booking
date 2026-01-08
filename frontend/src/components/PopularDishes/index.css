@@ -12,3 +12,20 @@
     align-items: flex-start;
     flex-wrap: wrap;
 }
+.popular-dishes-footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular-dish-footer-img{
+    height: 500px;
+    width: 400px;
+}
+.mini-info{
+    margin: 30px;
+    font-size: 28px;
+}
+.exp{
+    font-size: 48px;
+}
