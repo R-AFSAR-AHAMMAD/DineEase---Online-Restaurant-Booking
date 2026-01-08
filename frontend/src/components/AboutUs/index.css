@@ -13,7 +13,17 @@
 }
 .about-us-img{
     width: 45%;
+    animation: spin 20s linear infinite;
 }
+@keyframes spin{
+    from{
+        transform :rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 .about-us-head{
     font-size: 70px;
 

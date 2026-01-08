@@ -2,12 +2,18 @@
     width: 300px;
     height: 330px;
     border-radius: 15px;
+    transition: all 0.4s ease;
+}
+.popular-dish-img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ffffff;
 }
 .popular-dish{
     list-style: none;
     text-align: start;
     margin-bottom: 20px;
 }
+
 .dish-name{
     font-size: 18px;
 }
