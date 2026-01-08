@@ -15,7 +15,7 @@ const App = () => {
       <AboutUs />
       <Services />
       <PopularDishes />
-
+      <Team />
       <Reservation />
       <Footer />
     </main>
