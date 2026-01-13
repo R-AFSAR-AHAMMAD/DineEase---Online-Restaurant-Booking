@@ -1,7 +1,7 @@
 .home-intro{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 50px;
     margin-top: 50px;

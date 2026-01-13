@@ -1,4 +1,3 @@
-import React from "react";
 import "./index.css";
 import TeamMember from "../TeamMember"
 const teamMembers = [
