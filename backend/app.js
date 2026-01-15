@@ -1,10 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
-
+const cors = require("cors");
 const app = express();
 
 app.use(express.json());
-
+app.use(cors());
 app.get("/", (req, res) => {
   res.send("Running on Port 5000");
 });
@@ -54,8 +54,8 @@ app.post('/reservations',async (req,res)=>{
   try{
     const {name,email,date,time,people} = req.body;
 
-    if (!email || !name || !date || !people || !time){
-      res.status(400).json({message:"All fields are required"})
+    if (!email || !name || !date || !time){
+      return res.status(400).json({message:"All fields are required"})
     }
 
     const newReservation = new Reservation({name,email,date,time,people});

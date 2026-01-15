@@ -5,6 +5,7 @@
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    overflow: hidden;
 }
 .about-des{
     width: 50%;
@@ -12,7 +13,7 @@
     font-size: large;
 }
 .about-us-img{
-    width: 45%;
+    width: 600px;
     animation: spin 20s linear infinite;
 }
 @keyframes spin{

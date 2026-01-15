@@ -1,6 +1,6 @@
 import "./index.css";
-import {useState} from 'react'
-const ReservationForm = ({ onReserve }) => {
+import { useState } from "react";
+const ReservationForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [date, setDate] = useState("");
@@ -8,7 +8,7 @@ const ReservationForm = ({ onReserve }) => {
   const [people, setPeople] = useState(1);
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!name || !email || !date || !time) {
@@ -16,17 +16,29 @@ const ReservationForm = ({ onReserve }) => {
       return;
     }
 
-    // Call a parent callback (optional)
-    if (onReserve) {
-      onReserve({ name, email, date, time, people });
-    }
+    try {
+      const options = {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, date, time, people }),
+      };
+      const apiUrl = "http://localhost:5000/reservations";
 
-    setMessage("Reservation submitted!");
-    setName("");
-    setEmail("");
-    setDate("");
-    setTime("");
-    setPeople(1);
+      const response = await fetch(apiUrl, options);
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setMessage(data.message);
+        setName("");
+        setEmail("");
+        setDate("");
+        setTime("");
+        setPeople(1);
+      }
+    } catch (error) {
+      setMessage(`${error.message}`);
+    }
   };
 
   return (
