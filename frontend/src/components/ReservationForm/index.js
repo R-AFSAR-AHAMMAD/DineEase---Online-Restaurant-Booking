@@ -1,5 +1,5 @@
 import "./index.css";
-
+import {useState} from 'react'
 const ReservationForm = ({ onReserve }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
