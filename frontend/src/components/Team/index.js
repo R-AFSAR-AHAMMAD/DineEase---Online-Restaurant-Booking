@@ -30,7 +30,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section className="team">
+    <section id="team" className="team">
       <h1 className="team-main-head">OUR TEAM</h1>
       <p>
         Our talented team of culinary professionals brings years of experience

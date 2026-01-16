@@ -53,7 +53,7 @@ const popularDishes = [
 ];
 
 const PopularDishes = () => (
-  <section className="popular-dishes">
+  <section id="menu" className="popular-dishes">
     <h1 className="popular-dishes-main-head">POPULAR DISHES</h1>
     <p>
       Discover our most beloved dishes, carefully prepared by our expert chefs

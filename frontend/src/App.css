@@ -3,3 +3,6 @@
     background-size: cover;
     padding: 40px;
 }
+html{
+    scroll-behavior: smooth;
+}

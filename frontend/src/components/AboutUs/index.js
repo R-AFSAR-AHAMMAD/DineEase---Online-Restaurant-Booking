@@ -1,7 +1,7 @@
 import './index.css'
 
 const AboutUs = () => 
-    <section className="about-us">
+    <section id='about' className="about-us">
       <article className="about-des">
       <h1 className="about-us-head">ABOUT US</h1>
       <p>The only thing we're serious about is food.</p>

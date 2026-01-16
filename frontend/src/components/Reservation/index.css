@@ -7,6 +7,12 @@
     justify-content: space-between;
     align-items: center;
 }
+@media screen and (max-width:768px) {
+    .reservation-container{
+        flex-direction: column;
+    }
+}
 .reservation-img{
+    min-width: 100px;
     width: 600px;
 }

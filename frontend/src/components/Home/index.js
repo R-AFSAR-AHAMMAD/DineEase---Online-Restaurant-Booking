@@ -4,7 +4,7 @@ import "./index.css";
 const Home = () => (
   <>
     <Navbar />
-    <section className="home-intro">
+    <section id="home" className="home-intro">
       <article className="intro-head-wrapper">
         <span className="intro-head">Delicious</span>
         <img
